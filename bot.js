@@ -28,6 +28,7 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
   console.log('')
 });
 client.on('message', message => {
+    let prefix = "$";
     if (message.author.id === client.user.id) return;
     if (message.guild) {
    let embed = new Discord.RichEmbed()
@@ -41,8 +42,8 @@ return;
             var bc = new Discord.RichEmbed()
             .addField(' » الرسالة : ', args)
             .setColor('#ff0000')
-            // m.send(`[${m}]`);
-            m.send(`${m}`,{embed: bc});
+            // m.send([${m}]);
+            m.send(${m},{embed: bc});
         });
     }
     } else {
