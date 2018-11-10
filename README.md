@@ -1,2 +1,0 @@
-# botstart-x
-START-X
